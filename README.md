@@ -12,7 +12,7 @@
 
 ## SCREENSHOTS
 
-<p align="center">
+<p align="left">
     <img src="screenshots/Screenshot-0.png" alt="index" width=160/>
     <img src="screenshots/Screenshot-1.png" alt="login" width=160/>
     <img src="screenshots/Screenshot-2.png" alt="register" width=160/>
