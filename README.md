@@ -8,5 +8,16 @@
 </p>
 
 
-
 # Facebook auth clone using bootstrap5 and laravel
+
+## SCREENSHOTS
+
+<p align="center">
+    <img src="screenshots/Screenshot-0.png" alt="index" width=160/>
+    <img src="screenshots/Screenshot-1.png" alt="login" width=160/>
+    <img src="screenshots/Screenshot-2.png" alt="register" width=160/>
+    <img src="screenshots/Screenshot-3.png" alt="verify" width=160/>
+    <img src="screenshots/Screenshot-4.png" alt="reset-email" width=160/>
+    <img src="screenshots/Screenshot-5.png" alt="reset-email-mobile" width=100/>
+    <img src="screenshots/Screenshot-6.png" alt="update-password" width=160/>
+</p>
