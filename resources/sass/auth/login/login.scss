@@ -7,17 +7,14 @@
 
 #login__wrapper {
     background-color: $light-blue;
-    padding-bottom: 112px !important;
+    padding-bottom: 80px !important;
 }
 
 @media screen and (min-width: 768px) {
-    #login__wrapper {
-        padding-top: 72px !important;
-    }
 }
 
 #login__image {
-    width: 301px !important;
+    width: 240px !important;
 }
 
 #login__card-wrapper > .card {

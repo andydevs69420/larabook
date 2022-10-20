@@ -9,15 +9,15 @@
 /*
  | Facebook
  */
-#login__wrapper {
+#register__wrapper {
   background-color: #eeeeee;
   padding-bottom: 80px !important;
 }
 
-#login__image {
-  width: 240px !important;
+#register__image {
+  width: 284px !important;
 }
 
-#login__card-wrapper > .card {
-  width: 380px !important;
-}/*# sourceMappingURL=login.css.map */
+#register__card-wrapper > .card {
+  width: 432px !important;
+}/*# sourceMappingURL=register.css.map */

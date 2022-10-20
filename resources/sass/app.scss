@@ -8,16 +8,48 @@
 // Variables
 @import 'variables';
 
+
+@import "@fortawesome/fontawesome-free/scss/brands";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 
 
 
+
 #app {
     min-width: 500px !important;
+
+    & *.text-link {
+        font-family: Helvetica, sans-serif !important;
+        font-size: 14px !important;
+    }
+
+    & *.text-link:hover {
+        text-decoration: underline !important;
+    }
 }
+
+
+/*
+ | INDEX
+ */
+
+@import "index/index.scss";
 
 /*
  | LOGIN STYLING
  */
 @import "auth/login/login.scss";
+// email
+@import "auth/passwords/email/email.scss";
+
+
+/*
+ | REGISTER STYLING
+ */
+ @import "auth/register/register.scss";

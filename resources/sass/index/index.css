@@ -1,0 +1,28 @@
+/*
+ *   Copyright (c) 2022
+ *   All rights reserved.
+ */
+/*
+ *   Copyright (c) 2022
+ *   All rights reserved.
+ */
+/*
+ | Facebook
+ */
+#index__wrapper {
+  background-color: #eeeeee;
+  padding-bottom: 112px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #index__wrapper {
+    padding-top: 72px !important;
+  }
+}
+#index__image {
+  width: 301px !important;
+}
+
+#index__card-wrapper > .card {
+  width: 380px !important;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,22 @@
+/*
+ *   Copyright (c) 2022
+ *   All rights reserved.
+ */
+
+ @import "../../variables";
+
+ #register__wrapper {
+    background-color: $light-blue;
+    padding-bottom: 80px !important;
+ }
+
+ @media screen and (min-width: 768px) {
+ }
+
+ #register__image {
+    width: 284px !important;
+ }
+
+ #register__card-wrapper > .card {
+    width: 432px !important;
+ }
