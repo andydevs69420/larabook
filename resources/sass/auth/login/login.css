@@ -1,0 +1,28 @@
+/*
+ *   Copyright (c) 2022
+ *   All rights reserved.
+ */
+/*
+ *   Copyright (c) 2022
+ *   All rights reserved.
+ */
+/*
+ | Facebook
+ */
+#login__wrapper {
+  background-color: #eeeeee;
+  padding-bottom: 112px !important;
+}
+
+@media screen and (min-width: 768px) {
+  #login__wrapper {
+    padding-top: 72px !important;
+  }
+}
+#login__image {
+  width: 301px !important;
+}
+
+#login__card-wrapper > .card {
+  width: 380px !important;
+}/*# sourceMappingURL=login.css.map */
