@@ -7,7 +7,7 @@
                 <div class="col-10 col-md-5 offset-1 offset-md-1 text-center text-md-start">
                     <img id="index__image" class="img mt-1 mt-md-5 mx-auto ms-md-0" src="{{ asset('images/icon.png') }}" alt="Larabook" />
                     <p class="d-inline-block ps-4 fs-3 lead w-100">
-                        Connect with friends and the world around you on Facebook.
+                        Connect with friends and the world around you on Larabook.
                     </p>
                 </div>
                 <div class="col-12 col-md-6">
@@ -20,18 +20,18 @@
                                     <div class="row">
                                         {{-- email or phone --}}
                                         <div class="col-12 mb-3">
-                                            <input type="text" class="form-control form-control-lg rounded-1 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus autocomplete="email"/>
+                                            <input class="form-control form-control-lg rounded-1 @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus autocomplete="email"/>
                                             @error('email')
-                                                <div class="invalid-feedback">
+                                                <div class="invalid-feedback text-start">
                                                     <strong class="text-danger">{{ $message }}</strong>
                                                 </div>
                                             @enderror
                                         </div>
                                         {{-- password --}}
                                         <div class="col-12 mb-3">
-                                            <input type="text" class="form-control form-control-lg rounded-1 @error('error') is-invalid @enderror" type="password" name="password" placeholder="Password" required/>
+                                            <input class="form-control form-control-lg rounded-1 @error('error') is-invalid @enderror" type="password" name="password" placeholder="Password" required/>
                                             @error('password')
-                                                <div class="invalid-feedback">
+                                                <div class="invalid-feedback text-start">
                                                     <strong class="text-danger">{{ $message }}</strong>
                                                 </div>
                                             @enderror

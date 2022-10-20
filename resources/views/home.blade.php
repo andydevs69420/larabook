@@ -14,7 +14,16 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    Welcome {{ Auth::user()->firstname }}. {{ __('You are logged in!') }}
+
+                    <br/>
+                    <br/>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button class="btn btn-sm btn-primary" type="submit">
+                            LOGOUT
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

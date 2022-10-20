@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Routes;
+use Illuminate\Support\Facades\Validator;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +16,57 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+
+/*
+ | Credential routes
+ */
+Auth::routes(["verify" => true]);
 
 Route::get("/", function () {
-    return view('index');
+    return view("index");
 });
 
+/** Loggedin through navbar form */
+Route::post("/navlogin", function() {
+    $validator = Validator::make(request()->all(), [
+        "email"    => "required|email|string|exists:users,email",
+        "password" => "required|string"
+    ]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    /* ======= VALIDATE =======|
+     * ========================|*/
+    if ($validator->fails())
+    return redirect()
+        ->to("/login")
+        ->withInput(request()->all())->withErrors($validator->messages());
+
+    /* ======= ATTEMPT ========|
+     * ========================|*/
+    if (!(Auth::attempt(request()->except("_token"))))
+    return redirect()
+        ->to("/login")
+        ->withInput(request()->all())->withErrors([
+            "email"    => [trans("auth.failed"  )],
+            "password" => [trans("auth.password")],
+    ]);
+
+    /* ======= SUCCESS ========|
+     * ========================|*/
+    return redirect()->intended("/login");
+})->name("navlogin");
+
+
+
+
+
+
+
+/** =============================================================== */
+
+/*
+ | App operation routes
+ */
+Route::get("/home", [App\Http\Controllers\HomeController::class, "index"])
+->middleware(["auth", "verified"])
+->name("home");
 

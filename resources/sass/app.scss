@@ -20,16 +20,22 @@
 
 
 
-
 #app {
     min-width: 500px !important;
 
-    & *.text-link {
+    & a.text-link {
         font-family: Helvetica, sans-serif !important;
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
-    & *.text-link:hover {
+    & a.text-link-sm {
+        font-family: Helvetica, sans-serif !important;
+    }
+
+    & a.text-link:hover {
+        text-decoration: underline !important;
+    }
+    & a.text-link-sm:hover {
         text-decoration: underline !important;
     }
 }

@@ -17,15 +17,16 @@
 
             <div id="app-with-nav__collapse-nav" class="navbar-collapse collapse">
                 <div class="container-fluid py-2 py-md-0">
-                    <form action="{{ route('login') }}" method="POST">
+                    <form action="{{ url('/navlogin') }}" method="POST">
+                        @csrf
                         <div class="row justify-content-center justify-content-md-end">
                             {{-- email --}}
                             <div class="col-12 col-md-auto px-0">
-                                <input class="form-control rounded-1" type="email" name="Email" placeholder="Email"/>
+                                <input class="form-control rounded-1" type="email" name="email" placeholder="Email" autocomplete="off"/>
                             </div>
                             {{-- password --}}
                             <div class="col-12 col-md-auto my-3 my-md-0 px-0 px-md-2">
-                                <input class="form-control rounded-1" type="password" name="Password" placeholder="Password"/>
+                                <input class="form-control rounded-1" type="password" name="password" placeholder="Password" autocomplete="off"/>
                             </div>
                             {{-- login btn --}}
                             <div class="col-12 col-md-auto px-0">
