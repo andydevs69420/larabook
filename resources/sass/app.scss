@@ -19,43 +19,23 @@
 @import 'bootstrap/scss/bootstrap';
 
 
-
-#app {
-    min-width: 500px !important;
-
-    & a.text-link {
-        font-family: Helvetica, sans-serif !important;
-        font-size: 14px;
-    }
-
-    & a.text-link-sm {
-        font-family: Helvetica, sans-serif !important;
-    }
-
-    & a.text-link:hover {
-        text-decoration: underline !important;
-    }
-    & a.text-link-sm:hover {
-        text-decoration: underline !important;
-    }
-}
+@import "layouts/layouts";
 
 
 /*
  | INDEX
  */
-
-@import "index/index.scss";
+@import "index/index";
 
 /*
  | LOGIN STYLING
  */
-@import "auth/login/login.scss";
-// email
-@import "auth/passwords/email/email.scss";
-
+@import "auth/login/login";
 
 /*
  | REGISTER STYLING
  */
- @import "auth/register/register.scss";
+ @import "auth/register/register";
+
+
+@import "components/navbar/navbar";

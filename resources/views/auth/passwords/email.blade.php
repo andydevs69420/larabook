@@ -1,13 +1,13 @@
 @extends('layouts.app-with-nav')
 
 @section('main')
-    <div id="email__wrapper" class="container-fluid">
+    <div id="email__wrapper" class="container py-5">
         <div class="row justify-content-center">
             <div class="col-10 col-md-6 col-lg-5">
                 <form method="POST" action="{{ route('password.email') }}">
                     @csrf
 
-                    <div class="card border-0 shadow-sm">
+                    <div class="card border-0 shadow">
 
                         <div class="card-header py-3 fw-bold fs-5 bg-transparent"
                             style="font-family: Helvetica, sans-serif">
